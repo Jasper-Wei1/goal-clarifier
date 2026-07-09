@@ -76,13 +76,18 @@ A request is ready enough when it contains:
 - boundary: language, scope, reference, format, depth, or "do not" constraint
 - permission signal: an explicit request to write, edit, review, implement, or produce
 
-When this happens, first state the judgment, then proceed:
+When this happens, first state the judgment, then ask whether to execute, structure only, or continue refining:
 
 ```text
-This goal is already actionable: it has {target}, {deliverable}, and {boundary}. I will skip the full clarification flow and execute directly. If I encounter a decision that would change the target, acceptance criteria, or boundary, I will ask first.
+This goal is already actionable: it has {target}, {deliverable}, and {boundary}. I can skip the full clarification flow.
+
+Do you want me to:
+1. execute it now,
+2. only convert it into a structured agent goal,
+3. or continue refining the goal before execution?
 ```
 
-Use this path to show that the skill is still doing judgment work. The absence of many questions should mean "the goal passed," not "the skill did not run."
+Use this path to show that the skill is still doing judgment work. The absence of many questions should mean "the goal passed the ready-goal check," not "the skill did not run." Passing the check is not permission to execute; it is permission to ask for execution confirmation.
 
 ### Phase -1: Starting-State Triage
 
@@ -467,7 +472,7 @@ Do not replace vague words with fancier vague words. Replace them with concrete 
 ## Default Behavior
 
 - Ask one or two high-value questions at a time.
-- If the request is already actionable, explicitly say it passed the ready-goal check before executing.
+- If the request is already actionable, explicitly say it passed the ready-goal check, then ask whether to execute now, structure only, or keep refining.
 - When the user cannot answer, switch from questioning to candidate reaction.
 - When the user rejects a candidate, treat the rejection as useful boundary data.
 - Mark assumptions explicitly.
