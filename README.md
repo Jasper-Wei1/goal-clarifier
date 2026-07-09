@@ -4,8 +4,6 @@
 
 适用于 Codex、Claude Code，以及其他支持 `SKILL.md` / system prompt 的 Agent 工作流。
 
-作者主页：[Jasper Wei](https://x.com/Jasper_Wei1)
-
 很多时候，模型已经足够强，真正的瓶颈是人还没有把目标说清楚：
 
 - 想做什么说不清
@@ -16,6 +14,7 @@
 
 `goal-clarifier` 的作用不是帮你把一句话润色得更像 prompt，而是通过交互式澄清，把一团模糊想法压成一条可执行、可验收、有边界的 Agent goal。
 
+作者主页：[Jasper Wei](https://x.com/Jasper_Wei1)
 ---
 
 ## 这个 Skill 解决什么问题
