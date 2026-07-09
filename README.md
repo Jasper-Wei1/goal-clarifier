@@ -15,6 +15,8 @@
 `goal-clarifier` 的作用不是帮你把一句话润色得更像 prompt，而是通过交互式澄清，把一团模糊想法压成一条可执行、可验收、有边界的 Agent goal。
 
 作者主页：[Jasper Wei](https://x.com/Jasper_Wei1)
+
+
 ---
 
 ## 这个 Skill 解决什么问题
