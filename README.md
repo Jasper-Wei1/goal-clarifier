@@ -1,5 +1,7 @@
 # goal-clarifier
 
+[中文说明](README.md) / [English README](README.en.md)
+
 把模糊想法澄清成可交给 Agent 执行的目标指令。
 
 适用于 Codex、Claude Code，以及其他支持 `SKILL.md` / system prompt 的 Agent 工作流。
@@ -511,6 +513,9 @@ $goal-clarifier
 ```text
 goal-clarifier/
 ├── SKILL.md
+├── README.md
+├── README.en.md
+├── LICENSE
 └── agents/
     └── openai.yaml
 ```
@@ -519,4 +524,4 @@ goal-clarifier/
 
 ## License
 
-暂未指定 license。使用前请以仓库最新版本为准。
+MIT License. See [LICENSE](LICENSE).
