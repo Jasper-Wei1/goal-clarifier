@@ -64,6 +64,26 @@ An executable goal must say not only what to do, but also what not to do. Bounda
 
 Use the shortest path that reaches the standards. If the user already has a usable goal, skip Phase 0. If the user is still in fog, do Phase -1 and Phase 0 before formal goal auditing.
 
+### Ready Goal Fast Path
+
+If the user's request already contains enough information to act, do not force the full clarification workflow.
+
+A request is ready enough when it contains:
+
+- target: what should be done
+- object: what file, project, idea, or material is being acted on
+- deliverable: what output should be produced
+- boundary: language, scope, reference, format, depth, or "do not" constraint
+- permission signal: an explicit request to write, edit, review, implement, or produce
+
+When this happens, first state the judgment, then proceed:
+
+```text
+This goal is already actionable: it has {target}, {deliverable}, and {boundary}. I will skip the full clarification flow and execute directly. If I encounter a decision that would change the target, acceptance criteria, or boundary, I will ask first.
+```
+
+Use this path to show that the skill is still doing judgment work. The absence of many questions should mean "the goal passed," not "the skill did not run."
+
 ### Phase -1: Starting-State Triage
 
 Ask the user to choose or describe their starting state:
@@ -447,6 +467,7 @@ Do not replace vague words with fancier vague words. Replace them with concrete 
 ## Default Behavior
 
 - Ask one or two high-value questions at a time.
+- If the request is already actionable, explicitly say it passed the ready-goal check before executing.
 - When the user cannot answer, switch from questioning to candidate reaction.
 - When the user rejects a candidate, treat the rejection as useful boundary data.
 - Mark assumptions explicitly.
