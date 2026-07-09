@@ -1,0 +1,4 @@
+interface:
+  display_name: "Goal Clarifier"
+  short_description: "Clarify fuzzy ideas into executable agent goals"
+  default_prompt: "Use $goal-clarifier to turn my fuzzy idea into an executable agent goal with acceptance criteria and execution boundaries."
